@@ -1,16 +1,41 @@
-# React + Vite
+# AeroFreq
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**AeroFreq**는 항공 관제 주파수와 공항 정보를 지도에서 쉽고 직관적으로 확인할 수 있도록 제작한 웹 애플리케이션입니다.
 
-Currently, two official plugins are available:
+현재 대한민국의 주요 공항 정보를 제공하며, 향후 항공로와 공역 등 다양한 항공 정보를 추가할 예정입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🌐 바로가기
 
-## React Compiler
+**[AeroFreq 웹사이트](https://choik12.github.io/aerofreq/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✈️ 주요 기능
 
-## Expanding the Oxlint configuration
+- 대한민국 18개 공항의 위치 및 기본 정보 제공
+- 공항별 항공 관제 주파수 조회 (322개 데이터)
+- 공항명, ICAO 및 IATA 코드 검색
+- 관제 업무별 주파수 분류 및 표시
+- 다크 테마 기반 인터랙티브 지도
+- PC 및 모바일 환경 지원
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 🛠️ 개발 기술
+
+- **Frontend:** React, Vite
+- **Map:** Leaflet, React-Leaflet, CARTO
+- **Data:** 대한민국 항공정보간행물(eAIP) 기반 정리 데이터
+- **Deployment:** GitHub Pages, GitHub Actions
+
+### 📌 개발 현황
+
+**Current Version: v1.0.0**
+
+현재 AeroFreq는 대한민국 공항 및 관제 주파수 조회 기능을 중심으로 운영되고 있습니다.
+
+향후 공역, IFR 항공로, 항행안전시설(VOR), 웨이포인트(FIX) 등의 기능을 단계적으로 추가할 계획입니다.
+
+### ⚠️ 안내
+
+AeroFreq는 개인 개발 항공정보 프로젝트입니다. 제공되는 정보는 학습 및 참고 목적으로만 활용해야 하며, 실제 항공 운항이나 관제 업무에 사용해서는 안 됩니다.
+
+---
+
+© 2026 AeroFreq
