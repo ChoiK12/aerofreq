@@ -13,6 +13,8 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import airports from './data/kr/airports.json';
 import frequencies from './data/kr/frequencies.json';
+import vors from './data/kr/vors.json';
+import fixes from './data/kr/fixes.json';
 import './App.css';
 
 const initialLayers = [
@@ -20,8 +22,23 @@ const initialLayers = [
   { id: 'airspaces', label: '항공 구역', detail: 'Airspaces', symbol: '⬡' },
   { id: 'routes', label: 'IFR 항로', detail: 'ATS Routes', symbol: '⌁' },
   { id: 'waypoints', label: 'FIX / 웨이포인트', detail: 'Waypoints', symbol: '⊙' },
-  { id: 'navaids', label: '항행 시설', detail: 'Navaids', symbol: '⌖' },
+  { id: 'navaids', label: '항행 시설', detail: 'Navaids', symbol: '⬡' },
 ];
+
+// These layers remain empty until coordinates are verified against official eAIP data.
+const navigationIcon = (type, size) => L.divIcon({
+  className: 'aerofreq-nav-marker',
+  html: `<span class="nav-marker nav-marker--${type}" style="width:${size}px;height:${size}px;${type.startsWith('fix') ? `font-size:${Math.round(size * 0.88)}px;` : ''}">${type === 'vor' ? '<svg class="vor-hex-svg" viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,5 55,18 55,45 32,58 9,45 9,18" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="32" r="5" fill="currentColor"/></svg>' : (type === 'fix-compulsory' ? '▲' : '△')}</span>`,
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size / 2],
+  popupAnchor: [0, -size / 2],
+});
+const validNavigationPoints = (points) => points.filter((point) =>
+  point.id && point.latitude !== '' && point.longitude !== '' &&
+  point.latitude != null && point.longitude != null &&
+  Number.isFinite(Number(point.latitude)) && Number.isFinite(Number(point.longitude)) &&
+  Math.abs(Number(point.latitude)) <= 90 && Math.abs(Number(point.longitude)) <= 180
+);
 
 const airportIcon = L.divIcon({
   className: '',
@@ -124,6 +141,8 @@ function App() {
     initialLayers.map((layer) => layer.id)
   );
   const [selectedIcao, setSelectedIcao] = useState(null);
+  const validVors = useMemo(() => validNavigationPoints(vors), []);
+  const validFixes = useMemo(() => validNavigationPoints(fixes), []);
   const [showAllFrequencies, setShowAllFrequencies] = useState(false);
   const [frequencyView, setFrequencyView] = useState('group');
   const [expandedServices, setExpandedServices] = useState([]);
@@ -135,6 +154,15 @@ function App() {
   const [dragging, setDragging] = useState(false);
   const [sheetClosing, setSheetClosing] = useState(false);
   const [mapZoom, setMapZoom] = useState(7);
+  // Both markers shrink when zooming out; neither exceeds its previous maximum.
+  const vorIcon = useMemo(() => {
+    const size = Math.round(Math.max(12, Math.min(28, 28 - Math.max(0, 9 - mapZoom) * 2)));
+    return navigationIcon('vor', size);
+  }, [mapZoom]);
+  const fixIcons = useMemo(() => {
+    const size = Math.round(Math.max(10, Math.min(25, 25 - Math.max(0, 9 - mapZoom) * 2)));
+    return { compulsory: navigationIcon('fix-compulsory', size), on_request: navigationIcon('fix-on-request', size) };
+  }, [mapZoom]);
   const detailsScrollRef = useRef(null);
   const dragRef = useRef(null);
   const dragOffsetRef = useRef(0);
@@ -321,7 +349,7 @@ function App() {
         </div>
 
         <div className="topbar-right">
-          <span className="version-label">v1.0</span>
+          <span className="version-label">v1.1.0</span>
           <div className="topbar-coordinate">
             36°30′N · 127°30′E
           </div>
@@ -481,7 +509,7 @@ function App() {
 
           <div className="sidebar-footer">
             <span>DATA-DRIVEN AVIATION MAP</span>
-            <span>v0.2.0</span>
+            <span>v1.1.0</span>
           </div>
         </aside>
 
@@ -522,7 +550,7 @@ function App() {
                     },
                   }}
                 >
-                  <Popup className="aerofreq-airport-popup" maxWidth={280} minWidth={220}>
+                  <Popup className="aerofreq-airport-popup" maxWidth={190} minWidth={190}>
                     <div className="popup-zoom-sizing" style={{ '--popup-scale': Math.max(0.78, Math.min(1, 0.78 + (mapZoom - 5) * 0.055)) }}>
                     <div className="airport-popup-card">
                       <div className="airport-popup-eyebrow">AIRPORT INFORMATION</div>
@@ -541,6 +569,40 @@ function App() {
                   </Popup>
                 </Marker>
               ))}
+            {activeLayers.includes('navaids') && validVors.map((vor) => (
+              <Marker key={`vor-${vor.id}`} position={[Number(vor.latitude), Number(vor.longitude)]} icon={vorIcon}>
+                <Popup className="aerofreq-airport-popup aerofreq-navigation-popup" maxWidth={190} minWidth={190}>
+                  <div className="popup-zoom-sizing" style={{ '--popup-scale': Math.max(0.78, Math.min(1, 0.78 + (mapZoom - 5) * 0.055)) }}>
+                    <div className="airport-popup-card">
+                      <div className="airport-popup-eyebrow">NAVIGATION AID · VOR</div>
+                      <div className="airport-popup-name">{vor.id}</div>
+                      <div className="airport-popup-english">{vor.name || 'VHF Omnidirectional Range'}</div>
+                      <div className="airport-popup-codes">
+                        <div><small>TYPE</small><strong>{vor.type || 'VOR'}</strong></div>
+                        <div><small>IDENT</small><strong>{vor.id}</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </Popup>
+              </Marker>
+            ))}
+            {activeLayers.includes('waypoints') && validFixes.map((fix) => (
+              <Marker key={`fix-${fix.id}`} position={[Number(fix.latitude), Number(fix.longitude)]} icon={fix.reporting_type === 'compulsory' ? fixIcons.compulsory : fixIcons.on_request}>
+                <Popup className="aerofreq-airport-popup aerofreq-navigation-popup" maxWidth={190} minWidth={190}>
+                  <div className="popup-zoom-sizing" style={{ '--popup-scale': Math.max(0.78, Math.min(1, 0.78 + (mapZoom - 5) * 0.055)) }}>
+                    <div className="airport-popup-card">
+                      <div className="airport-popup-eyebrow">WAYPOINT INFORMATION</div>
+                      <div className="airport-popup-name">{fix.id}</div>
+                      <div className="airport-popup-english">{fix.reporting_type === 'compulsory' ? '필수보고지점 · Compulsory' : fix.reporting_type === 'on_request' ? '비필수보고지점 · On-request' : 'FIX / Waypoint'}</div>
+                      <div className="airport-popup-codes">
+                        <div><small>TYPE</small><strong>{fix.code_type || 'FIX'}</strong></div>
+                        <div><small>IDENT</small><strong>{fix.id}</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </Popup>
+              </Marker>
+            ))}
           </MapContainer>
 
           <div className="map-top-label">
@@ -732,7 +794,7 @@ function App() {
             <div className="details-empty">
               <div className="empty-illustration">
                 <div className="empty-circle">
-                  <span>⌖</span>
+                  <span>⬡</span>
                 </div>
                 <div className="empty-orbit orbit-one" />
                 <div className="empty-orbit orbit-two" />

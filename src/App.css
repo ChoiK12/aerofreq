@@ -1286,15 +1286,15 @@ box-shadow:0 -10px 35px #0007}
 .mobile-details-close{top:34px}
 }
 .aerofreq-airport-popup .leaflet-popup-content-wrapper{background:#192532;border:1px solid #3b5065;border-radius:14px;box-shadow:0 12px 32px #0009;color:#f3f6fa;padding:0}
-.aerofreq-airport-popup .leaflet-popup-content{margin:0;width:240px!important}
+.aerofreq-airport-popup .leaflet-popup-content{margin:0;width:190px!important}
 .aerofreq-airport-popup .leaflet-popup-tip{background:#192532}
 .aerofreq-airport-popup .leaflet-popup-close-button{color:#a7b7c8!important;top:8px!important;right:9px!important;font-size:20px!important;z-index:1}
-.airport-popup-card{padding:15px}
+.airport-popup-card{padding:13px}
 .airport-popup-eyebrow{color:#8fa6bd;font-size:9px;letter-spacing:.11em;margin-bottom:7px}
 .airport-popup-name{font-size:16px;font-weight:700;padding-right:18px}
 .airport-popup-english{font-size:11px;color:#a7b7c8;margin-top:3px;line-height:1.4}
 .airport-popup-codes{display:flex;gap:7px;margin-top:13px}
-.airport-popup-codes>div{display:flex;flex-direction:column;gap:3px;background:#27394b;padding:7px 12px;border-radius:7px;min-width:68px}
+.airport-popup-codes>div{display:flex;flex-direction:column;gap:3px;background:#27394b;padding:7px 10px;border-radius:7px;min-width:60px}
 .airport-popup-codes small{font-size:9px;color:#8fa6bd}
 .airport-popup-codes strong{font-size:12px;color:#fff}
 .airport-popup-action{margin-top:12px;width:100%;border:1px solid #486785;border-radius:8px;padding:10px;background:#304d68;color:#fff;cursor:pointer;font-size:12px;font-weight:600}
@@ -1329,3 +1329,35 @@ box-shadow:0 -10px 35px #0007}
 @media (max-width: 768px) {
   .aerofreq-brand-logo { width: 136px; height: 36px; }
 }
+
+/* v2.0 navigation overlays */
+.aerofreq-nav-marker { background: transparent; border: 0; }
+.nav-marker { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 800; text-shadow: 0 1px 5px #000; }
+.nav-marker--vor { color: #f5c96b; }
+.nav-marker--fix { color: #a7e9e3; }
+/* Navigation popups reuse the airport popup card styling. */
+.aerofreq-navigation-popup .airport-popup-codes > div { min-width: 60px; }
+
+/* VOR and FIX markers follow zoom-dependent Leaflet icon sizes. */
+.nav-marker--vor .vor-hex-svg { width: 100%; height: 100%; display: block; filter: drop-shadow(0 1px 3px rgba(0,0,0,.75)); }
+
+/* v2 popup compact width: fill the full inner row, not the outer popup. */
+.aerofreq-airport-popup .airport-popup-card {
+  box-sizing: border-box;
+  width: 100%;
+}
+.aerofreq-airport-popup .airport-popup-codes {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 7px;
+}
+.aerofreq-airport-popup .airport-popup-codes > div,
+.aerofreq-navigation-popup .airport-popup-codes > div {
+  flex: 1 1 0;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+.nav-marker--fix-compulsory, .nav-marker--fix-on-request { color: #a7e9e3; }

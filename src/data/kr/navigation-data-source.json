@@ -1,0 +1,9 @@
+{
+  "status": "historical_partial_sample",
+  "effective_date": "2025-06-11",
+  "notice": "Historical partial extract for UI testing. NOT verified against current eAIP; do not present as current navigation information.",
+  "vors_source": "https://aim.koca.go.kr/eaipPub/Package/2025-06-11-AIRAC/html/eAIP/KR-ENR-4.1-en-GB.html",
+  "fixes_source": "https://aim.koca.go.kr/eaipPub/Package/2025-06-11-AIRAC/html/eAIP/KR-ENR-4.4-en-GB.html",
+  "vors_count": 8,
+  "fixes_count": 32
+}

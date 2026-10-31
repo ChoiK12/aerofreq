@@ -1,0 +1,2059 @@
+[
+  {
+    "id": "AGAVO",
+    "name": "AGAVO",
+    "latitude": 37.1666667,
+    "longitude": 124.0,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y644",
+      "Y697",
+      "Z55"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "AGSUS",
+    "name": "AGSUS",
+    "latitude": 36.7558333,
+    "longitude": 130.6788889,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "A586",
+      "Y579",
+      "G597",
+      "Y697"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "AKPON",
+    "name": "AKPON",
+    "latitude": 33.7805556,
+    "longitude": 127.3313889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y571"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ANDOL",
+    "name": "ANDOL",
+    "latitude": 37.6661111,
+    "longitude": 133.0,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "L512"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ANKUS",
+    "name": "ANKUS",
+    "latitude": 35.125,
+    "longitude": 128.7711111,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "V543",
+      "Y253",
+      "Y781"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ANROD",
+    "name": "ANROD",
+    "latitude": 34.6327778,
+    "longitude": 128.4977778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y571",
+      "Z83"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ANSIM",
+    "name": "ANSIM",
+    "latitude": 37.3897222,
+    "longitude": 124.8358333,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ANUBA",
+    "name": "ANUBA",
+    "latitude": 35.1294444,
+    "longitude": 127.5897222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "V543",
+      "Y253"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "APARU",
+    "name": "APARU",
+    "latitude": 35.4116667,
+    "longitude": 129.1588889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V11",
+      "Y744"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "APELA",
+    "name": "APELA",
+    "latitude": 34.7230556,
+    "longitude": 129.2333333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A582",
+      "Y782"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ATASO",
+    "name": "ATASO",
+    "latitude": 35.8955556,
+    "longitude": 126.9491667,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y722"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ATINA",
+    "name": "ATINA",
+    "latitude": 33.7222222,
+    "longitude": 127.0730556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "A586"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "ATOTI",
+    "name": "ATOTI",
+    "latitude": 30.0036111,
+    "longitude": 125.1983333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B576",
+      "Y722",
+      "Z86"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BASEM",
+    "name": "BASEM",
+    "latitude": 36.8436111,
+    "longitude": 127.9527778,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G585",
+      "Z53",
+      "Y685"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BEDAR",
+    "name": "BEDAR",
+    "latitude": 31.9002778,
+    "longitude": 126.4861111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y590"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BEDES",
+    "name": "BEDES",
+    "latitude": 36.1513889,
+    "longitude": 126.8122222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Z51",
+      "Y711"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BEDOM",
+    "name": "BEDOM",
+    "latitude": 35.4202778,
+    "longitude": 129.2983333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586",
+      "Y579"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BELTU",
+    "name": "BELTU",
+    "latitude": 37.205,
+    "longitude": 125.7997222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y644"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BEPKO",
+    "name": "BEPKO",
+    "latitude": 33.6527778,
+    "longitude": 126.9205556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y572"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BESNA",
+    "name": "BESNA",
+    "latitude": 34.6216667,
+    "longitude": 129.1308333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y781"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BIDRI",
+    "name": "BIDRI",
+    "latitude": 36.3352778,
+    "longitude": 124.4147222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y655"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BIGOB",
+    "name": "BIGOB",
+    "latitude": 36.7236111,
+    "longitude": 128.1644444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G585",
+      "Y685"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BIKSI",
+    "name": "BIKSI",
+    "latitude": 37.6755556,
+    "longitude": 128.5844444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BILUM",
+    "name": "BILUM",
+    "latitude": 33.7702778,
+    "longitude": 127.0775,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y572",
+      "Z85"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BINIL",
+    "name": "BINIL",
+    "latitude": 37.3969444,
+    "longitude": 125.2330556,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BITUX",
+    "name": "BITUX",
+    "latitude": 36.2791667,
+    "longitude": 128.03,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A582",
+      "Z53",
+      "Y782"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BODOL",
+    "name": "BODOL",
+    "latitude": 37.1894444,
+    "longitude": 124.8316667,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y644"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BOGAN",
+    "name": "BOGAN",
+    "latitude": 37.2113889,
+    "longitude": 126.47,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y644"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BONSO",
+    "name": "BONSO",
+    "latitude": 30.4777778,
+    "longitude": 125.1475,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y711",
+      "Z86"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BOPTA",
+    "name": "BOPTA",
+    "latitude": 36.735,
+    "longitude": 126.6161111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Z51"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BULGA",
+    "name": "BULGA",
+    "latitude": 35.9358333,
+    "longitude": 129.8233333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586",
+      "Y579",
+      "G585",
+      "Y685"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BULTI",
+    "name": "BULTI",
+    "latitude": 36.7227778,
+    "longitude": 126.825,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711",
+      "Z50"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "BUSKO",
+    "name": "BUSKO",
+    "latitude": 37.6758333,
+    "longitude": 130.2694444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y233",
+      "B467",
+      "Y437"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "DABIK",
+    "name": "DABIK",
+    "latitude": 36.2952778,
+    "longitude": 130.1952778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586",
+      "Y579"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "DALPO",
+    "name": "DALPO",
+    "latitude": 36.9763889,
+    "longitude": 124.4147222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Z57",
+      "Y655"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "DALSU",
+    "name": "DALSU",
+    "latitude": 35.1252778,
+    "longitude": 126.7016667,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y711",
+      "Y253",
+      "V543"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "DANPA",
+    "name": "DANPA",
+    "latitude": 35.51,
+    "longitude": 124.4147222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y655"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "DANTI",
+    "name": "DANTI",
+    "latitude": 37.3016667,
+    "longitude": 124.6580556,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597"
+    ],
+    "source_page": 1,
+    "type": "FIX"
+  },
+  {
+    "id": "DOMKO",
+    "name": "DOMKO",
+    "latitude": 32.48,
+    "longitude": 125.9830556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "DOTOL",
+    "name": "DOTOL",
+    "latitude": 34.2541667,
+    "longitude": 126.6102778,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "EGOBA",
+    "name": "EGOBA",
+    "latitude": 37.4875,
+    "longitude": 127.3794444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G597",
+      "W62",
+      "Z50",
+      "Y644",
+      "Y697"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ELAPI",
+    "name": "ELAPI",
+    "latitude": 36.3372222,
+    "longitude": 128.8475,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G585",
+      "Y685"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ELGEP",
+    "name": "ELGEP",
+    "latitude": 31.7813889,
+    "longitude": 125.9380556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y590",
+      "Y722",
+      "B576"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ELPOS",
+    "name": "ELPOS",
+    "latitude": 35.9027778,
+    "longitude": 126.7852778,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "V549",
+      "Y659",
+      "Y711"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ENGOT",
+    "name": "ENGOT",
+    "latitude": 34.8094444,
+    "longitude": 128.4977778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y572",
+      "Z83"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ENSAL",
+    "name": "ENSAL",
+    "latitude": 36.9316667,
+    "longitude": 127.7963889,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G585",
+      "Y685"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ENSUM",
+    "name": "ENSUM",
+    "latitude": 32.2172222,
+    "longitude": 124.7763889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y655"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ENTEL",
+    "name": "ENTEL",
+    "latitude": 36.3863889,
+    "longitude": 126.9513889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B576"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "ESNEG",
+    "name": "ESNEG",
+    "latitude": 37.1705556,
+    "longitude": 129.8475,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "GOGET",
+    "name": "GOGET",
+    "latitude": 37.4116667,
+    "longitude": 126.51,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G597",
+      "W61",
+      "Z54",
+      "Y697"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "GONAV",
+    "name": "GONAV",
+    "latitude": 37.18,
+    "longitude": 124.4147222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G597",
+      "Y644",
+      "Y655",
+      "Y697"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "GONAX",
+    "name": "GONAX",
+    "latitude": 36.3863889,
+    "longitude": 126.8377778,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "GOSBO",
+    "name": "GOSBO",
+    "latitude": 34.2547222,
+    "longitude": 127.7927778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "GUKDO",
+    "name": "GUKDO",
+    "latitude": 37.0197222,
+    "longitude": 127.6397222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G585",
+      "Y685"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "GUKSU",
+    "name": "GUKSU",
+    "latitude": 33.8808333,
+    "longitude": 126.7325,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y722"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "GUNKU",
+    "name": "GUNKU",
+    "latitude": 36.5705556,
+    "longitude": 126.9969444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y722"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "IGDOK",
+    "name": "IGDOK",
+    "latitude": 35.5177778,
+    "longitude": 127.8186111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V547"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "IGRAS",
+    "name": "IGRAS",
+    "latitude": 37.3127778,
+    "longitude": 132.7363889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B332"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "IKEDO",
+    "name": "IKEDO",
+    "latitude": 31.7205556,
+    "longitude": 125.6633333,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y590",
+      "Y711"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "INVOK",
+    "name": "INVOK",
+    "latitude": 34.7886111,
+    "longitude": 129.3230556,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G339",
+      "Z91"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "IPDAS",
+    "name": "IPDAS",
+    "latitude": 34.2541667,
+    "longitude": 126.7169444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B576"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KAKSO",
+    "name": "KAKSO",
+    "latitude": 37.1291667,
+    "longitude": 127.4436111,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G585",
+      "Z52",
+      "Y685"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KALEK",
+    "name": "KALEK",
+    "latitude": 35.2088889,
+    "longitude": 129.8847222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Z84"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KALMA",
+    "name": "KALMA",
+    "latitude": 37.3125,
+    "longitude": 127.1125,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "G585",
+      "Y685"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KALOD",
+    "name": "KALOD",
+    "latitude": 35.5033333,
+    "longitude": 128.7738889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A582",
+      "Y782"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KAMIT",
+    "name": "KAMIT",
+    "latitude": 34.2538889,
+    "longitude": 126.7716667,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y722"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KANKA",
+    "name": "KANKA",
+    "latitude": 31.5319444,
+    "longitude": 125.5844444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KANSU",
+    "name": "KANSU",
+    "latitude": 38.6333333,
+    "longitude": 132.475,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B332",
+      "B467",
+      "Y233",
+      "Y437"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KARBU",
+    "name": "KARBU",
+    "latitude": 37.5330556,
+    "longitude": 127.6644444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "KIDOS",
+    "name": "KIDOS",
+    "latitude": 33.8411111,
+    "longitude": 126.5672222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y711",
+      "Z81"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LAMEN",
+    "name": "LAMEN",
+    "latitude": 31.61,
+    "longitude": 124.0,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A593"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LANAT",
+    "name": "LANAT",
+    "latitude": 36.3733333,
+    "longitude": 131.4283333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LAPAL",
+    "name": "LAPAL",
+    "latitude": 35.9036111,
+    "longitude": 129.0811111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V549"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LESBU",
+    "name": "LESBU",
+    "latitude": 37.6877778,
+    "longitude": 129.6844444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "B467",
+      "Y437",
+      "Z63"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LIMDI",
+    "name": "LIMDI",
+    "latitude": 33.5536111,
+    "longitude": 125.8313889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y655"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LINTA",
+    "name": "LINTA",
+    "latitude": 35.5211111,
+    "longitude": 126.8552778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B576"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LOSNI",
+    "name": "LOSNI",
+    "latitude": 33.5541667,
+    "longitude": 126.6980556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y722"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "LOSTO",
+    "name": "LOSTO",
+    "latitude": 36.3377778,
+    "longitude": 129.43,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V11",
+      "Y744"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "MAKDU",
+    "name": "MAKDU",
+    "latitude": 36.4533333,
+    "longitude": 127.8191667,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A582",
+      "Y782"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "MAKET",
+    "name": "MAKET",
+    "latitude": 33.9144444,
+    "longitude": 127.3313889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "MAKSA",
+    "name": "MAKSA",
+    "latitude": 35.5030556,
+    "longitude": 126.9061111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y722"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "MALSO",
+    "name": "MALSO",
+    "latitude": 37.9111111,
+    "longitude": 131.8177778,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "B467",
+      "Y437"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "MANGI",
+    "name": "MANGI",
+    "latitude": 35.5030556,
+    "longitude": 126.7422222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "MANOL",
+    "name": "MANOL",
+    "latitude": 33.6080556,
+    "longitude": 126.9205556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "A586"
+    ],
+    "source_page": 2,
+    "type": "FIX"
+  },
+  {
+    "id": "MASTA",
+    "name": "MASTA",
+    "latitude": 35.4797222,
+    "longitude": 128.5611111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "W526",
+      "Z83",
+      "Y781"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "MEKIL",
+    "name": "MEKIL",
+    "latitude": 36.5561111,
+    "longitude": 126.8313889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "MELES",
+    "name": "MELES",
+    "latitude": 35.8808333,
+    "longitude": 127.2616667,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "V549",
+      "Y659"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "MONSI",
+    "name": "MONSI",
+    "latitude": 37.2130556,
+    "longitude": 126.8375,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711",
+      "W61",
+      "Z54",
+      "Y644"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "MOXID",
+    "name": "MOXID",
+    "latitude": 36.3863889,
+    "longitude": 126.7330556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Z51"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "MUGUS",
+    "name": "MUGUS",
+    "latitude": 30.0016667,
+    "longitude": 124.9533333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "NIRAT",
+    "name": "NIRAT",
+    "latitude": 32.065,
+    "longitude": 126.0580556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "A593",
+      "Y722",
+      "B576"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "NISAV",
+    "name": "NISAV",
+    "latitude": 34.2552778,
+    "longitude": 127.9763889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y571"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "NOBUT",
+    "name": "NOBUT",
+    "latitude": 37.1208333,
+    "longitude": 129.3325,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V11",
+      "Y744"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "NOGON",
+    "name": "NOGON",
+    "latitude": 37.3805556,
+    "longitude": 124.4180556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y697"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "NONOS",
+    "name": "NONOS",
+    "latitude": 36.6794444,
+    "longitude": 124.4147222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y655"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "NOPIK",
+    "name": "NOPIK",
+    "latitude": 37.4033333,
+    "longitude": 125.6513889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "NULDI",
+    "name": "NULDI",
+    "latitude": 34.4205556,
+    "longitude": 126.6275,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OLBIM",
+    "name": "OLBIM",
+    "latitude": 37.2363889,
+    "longitude": 124.1308333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y697"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OLMEN",
+    "name": "OLMEN",
+    "latitude": 36.7369444,
+    "longitude": 126.9911111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B576",
+      "Z52",
+      "Y722"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OLMUD",
+    "name": "OLMUD",
+    "latitude": 35.0402778,
+    "longitude": 128.8211111,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y572"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OMKIM",
+    "name": "OMKIM",
+    "latitude": 33.2222222,
+    "longitude": 126.6872222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y571",
+      "Y572"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OMOTU",
+    "name": "OMOTU",
+    "latitude": 35.0091667,
+    "longitude": 128.8394444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "A586",
+      "Y781"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "ONATA",
+    "name": "ONATA",
+    "latitude": 38.4755556,
+    "longitude": 132.1005556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y233"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "ONIKU",
+    "name": "ONIKU",
+    "latitude": 32.195,
+    "longitude": 126.6547222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A593"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OPEDA",
+    "name": "OPEDA",
+    "latitude": 35.8636111,
+    "longitude": 127.6144444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "V549"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OROGA",
+    "name": "OROGA",
+    "latitude": 36.7488889,
+    "longitude": 127.455,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OSPOT",
+    "name": "OSPOT",
+    "latitude": 36.8383333,
+    "longitude": 127.3486111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A582",
+      "Y782"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "OSVOM",
+    "name": "OSVOM",
+    "latitude": 36.6455556,
+    "longitude": 129.3919444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V11",
+      "Y744"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "PALDU",
+    "name": "PALDU",
+    "latitude": 37.9702778,
+    "longitude": 132.6069444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "B332"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "PALSA",
+    "name": "PALSA",
+    "latitude": 34.0252778,
+    "longitude": 124.4147222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y655"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "PANSI",
+    "name": "PANSI",
+    "latitude": 33.0038889,
+    "longitude": 126.2069444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y711",
+      "Z82"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "PAPLU",
+    "name": "PAPLU",
+    "latitude": 33.5780556,
+    "longitude": 127.0602778,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y571",
+      "Z85"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "PEBRI",
+    "name": "PEBRI",
+    "latitude": 36.3863889,
+    "longitude": 127.0036111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y722"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "PILIT",
+    "name": "PILIT",
+    "latitude": 37.4419444,
+    "longitude": 129.2919444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "V11",
+      "Z63",
+      "Y744",
+      "Y697"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "POLEG",
+    "name": "POLEG",
+    "latitude": 37.2136111,
+    "longitude": 126.9930556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "A582",
+      "B576",
+      "Y644",
+      "Y782"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "PONIK",
+    "name": "PONIK",
+    "latitude": 32.0058333,
+    "longitude": 125.7830556,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "A593",
+      "Y711"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "POSAN",
+    "name": "POSAN",
+    "latitude": 36.9375,
+    "longitude": 127.2211111,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Z52"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "POVEM",
+    "name": "POVEM",
+    "latitude": 34.9230556,
+    "longitude": 128.9044444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y571"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "POVOR",
+    "name": "POVOR",
+    "latitude": 34.2555556,
+    "longitude": 127.7333333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y572"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "REBIT",
+    "name": "REBIT",
+    "latitude": 37.2008333,
+    "longitude": 125.4869444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y644"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "REMOS",
+    "name": "REMOS",
+    "latitude": 33.4347222,
+    "longitude": 126.3913889,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y655",
+      "Y711"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "RILRO",
+    "name": "RILRO",
+    "latitude": 37.1758333,
+    "longitude": 124.245,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y644",
+      "Z57"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "RIMPO",
+    "name": "RIMPO",
+    "latitude": 35.1275,
+    "longitude": 127.5838889,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "W45"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "RINBO",
+    "name": "RINBO",
+    "latitude": 35.8977778,
+    "longitude": 126.8969444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "B576",
+      "V549"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "RUGMA",
+    "name": "RUGMA",
+    "latitude": 32.5033333,
+    "longitude": 126.9647222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586",
+      "Y572",
+      "Z85"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "RUNIT",
+    "name": "RUNIT",
+    "latitude": 35.1261111,
+    "longitude": 128.4977778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "W45"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "SABET",
+    "name": "SABET",
+    "latitude": 37.6413889,
+    "longitude": 132.6719444,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "B332",
+      "L512"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "SADLI",
+    "name": "SADLI",
+    "latitude": 31.83,
+    "longitude": 125.0,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A593"
+    ],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "SAKTI",
+    "name": "SAKTI",
+    "latitude": 36.85,
+    "longitude": 127.7666667,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [],
+    "source_page": 3,
+    "type": "FIX"
+  },
+  {
+    "id": "SAMDO",
+    "name": "SAMDO",
+    "latitude": 33.5841667,
+    "longitude": 128.3158333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A595"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "SAMLO",
+    "name": "SAMLO",
+    "latitude": 32.5397222,
+    "longitude": 126.26,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "B576",
+      "Y722"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "SAMUL",
+    "name": "SAMUL",
+    "latitude": 35.1266667,
+    "longitude": 126.865,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y722",
+      "Y253",
+      "V543"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "SAPDI",
+    "name": "SAPDI",
+    "latitude": 35.1269444,
+    "longitude": 128.4977778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V543",
+      "Y253"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "SAPRA",
+    "name": "SAPRA",
+    "latitude": 35.8238889,
+    "longitude": 130.7236111,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G585",
+      "Y685"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "SARAM",
+    "name": "SARAM",
+    "latitude": 35.1266667,
+    "longitude": 128.5297222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V543",
+      "W526",
+      "Z83",
+      "Y253"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "SELPA",
+    "name": "SELPA",
+    "latitude": 37.9208333,
+    "longitude": 130.8197222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y233"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "SOSDO",
+    "name": "SOSDO",
+    "latitude": 33.0033333,
+    "longitude": 126.4597222,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B576",
+      "Y722"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TAMNA",
+    "name": "TAMNA",
+    "latitude": 33.4708333,
+    "longitude": 127.3313889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A595"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TEBEX",
+    "name": "TEBEX",
+    "latitude": 36.5613889,
+    "longitude": 127.9913889,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Z53"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TEDAN",
+    "name": "TEDAN",
+    "latitude": 35.1288889,
+    "longitude": 127.3144444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "V543",
+      "Y253"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TENAS",
+    "name": "TENAS",
+    "latitude": 37.6388889,
+    "longitude": 131.5741667,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "B467",
+      "L512",
+      "A586",
+      "Y579",
+      "Y437"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TESIM",
+    "name": "TESIM",
+    "latitude": 31.5905556,
+    "longitude": 125.8577778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B576",
+      "Y722"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TOLIS",
+    "name": "TOLIS",
+    "latitude": 33.8416667,
+    "longitude": 124.4147222,
+    "code_type": "5LNC",
+    "reporting_type": "on_request",
+    "routes": [
+      "Y655"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TOPAX",
+    "name": "TOPAX",
+    "latitude": 34.7652778,
+    "longitude": 128.4977778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586",
+      "W526"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TORUS",
+    "name": "TORUS",
+    "latitude": 37.6069444,
+    "longitude": 128.1352778,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "G597",
+      "Y697"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "TOSAN",
+    "name": "TOSAN",
+    "latitude": 33.0033333,
+    "longitude": 126.7719444,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A586",
+      "Y572"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "UGOVI",
+    "name": "UGOVI",
+    "latitude": 37.6847222,
+    "longitude": 129.8475,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "B467",
+      "Y437"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "UPGOS",
+    "name": "UPGOS",
+    "latitude": 33.9591667,
+    "longitude": 127.3313889,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "Y572"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  },
+  {
+    "id": "VASLI",
+    "name": "VASLI",
+    "latitude": 36.7144444,
+    "longitude": 127.5008333,
+    "code_type": "5LNC",
+    "reporting_type": "compulsory",
+    "routes": [
+      "A582",
+      "Y782"
+    ],
+    "source_page": 4,
+    "type": "FIX"
+  }
+]

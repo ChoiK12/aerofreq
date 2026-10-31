@@ -1,0 +1,82 @@
+[
+  {
+    "id": "CJU",
+    "name": "JEJU",
+    "type": "VORTAC",
+    "latitude": 33.3847222,
+    "longitude": 126.6241667,
+    "source_page": 3
+  },
+  {
+    "id": "CUN",
+    "name": "YECHEON",
+    "type": "VOR/DME",
+    "latitude": 36.6319444,
+    "longitude": 128.3252778,
+    "source_page": 3
+  },
+  {
+    "id": "KAE",
+    "name": "GANGWON",
+    "type": "VORTAC",
+    "latitude": 37.7008333,
+    "longitude": 128.7538889,
+    "source_page": 2
+  },
+  {
+    "id": "KPO",
+    "name": "POHANG",
+    "type": "VORTAC",
+    "latitude": 35.9772222,
+    "longitude": 129.4744444,
+    "source_page": 3
+  },
+  {
+    "id": "KUZ",
+    "name": "GUNSAN",
+    "type": "VORTAC",
+    "latitude": 35.9102778,
+    "longitude": 126.6113889,
+    "source_page": 2
+  },
+  {
+    "id": "KWA",
+    "name": "GWANGJU",
+    "type": "VOR/DME",
+    "latitude": 35.1261111,
+    "longitude": 126.8122222,
+    "source_page": 2
+  },
+  {
+    "id": "PSN",
+    "name": "BUSAN",
+    "type": "VORTAC",
+    "latitude": 35.1225,
+    "longitude": 128.9994444,
+    "source_page": 1
+  },
+  {
+    "id": "SEL",
+    "name": "ANYANG",
+    "type": "VORTAC",
+    "latitude": 37.4136111,
+    "longitude": 126.9283333,
+    "source_page": 1
+  },
+  {
+    "id": "SOT",
+    "name": "SONGTAN",
+    "type": "VORTAC",
+    "latitude": 37.0944444,
+    "longitude": 127.0316667,
+    "source_page": 3
+  },
+  {
+    "id": "TGU",
+    "name": "DALSEONG",
+    "type": "VORTAC",
+    "latitude": 35.8097222,
+    "longitude": 128.5908333,
+    "source_page": 1
+  }
+]
