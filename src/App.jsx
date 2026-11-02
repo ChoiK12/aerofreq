@@ -5,6 +5,8 @@ import {
   TileLayer,
   ZoomControl,
   Marker,
+  Polyline,
+  Tooltip,
   Popup,
   useMap,
   useMapEvents,
@@ -15,6 +17,7 @@ import airports from './data/kr/airports.json';
 import frequencies from './data/kr/frequencies.json';
 import vors from './data/kr/vors.json';
 import fixes from './data/kr/fixes.json';
+import airways from './data/kr/airways.json';
 import './App.css';
 
 const initialLayers = [
@@ -25,7 +28,7 @@ const initialLayers = [
   { id: 'navaids', label: '항행 시설', detail: 'Navaids', symbol: '⬡' },
 ];
 
-// These layers remain empty until coordinates are verified against official eAIP data.
+// Airspaces remain a planned layer; ATS routes use ENR 3.1 and 3.2 coordinates.
 const navigationIcon = (type, size) => L.divIcon({
   className: 'aerofreq-nav-marker',
   html: `<span class="nav-marker nav-marker--${type}" style="width:${size}px;height:${size}px;${type.startsWith('fix') ? `font-size:${Math.round(size * 0.88)}px;` : ''}">${type === 'vor' ? '<svg class="vor-hex-svg" viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,5 55,18 55,45 32,58 9,45 9,18" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="32" r="5" fill="currentColor"/></svg>' : (type === 'fix-compulsory' ? '▲' : '△')}</span>`,
@@ -71,6 +74,63 @@ function ResponsivePopupZoom({ onZoomChange }) {
   const map = useMapEvents({ zoomend: () => onZoomChange(map.getZoom()) });
   useEffect(() => { onZoomChange(map.getZoom()); }, [map, onZoomChange]);
   return null;
+}
+
+// Clicking empty map space or closing an airway popup clears its highlight.
+function ClearAirwayOnMapClick({ onClear }) {
+  useMapEvents({ click: () => onClear() });
+  return null;
+}
+
+// Labels are spaced in screen pixels, not degrees, so they adapt to map zoom.
+// Arrowheads are shown only where a published one-way direction is verified.
+const ONE_WAY_SECTIONS = {
+  Y697: { start: 'AGAVO', end: 'SEL', direction: 'reverse' },
+  G597: { start: 'AGAVO', end: 'SEL', direction: 'reverse' },
+};
+
+function AirwayLabels({ routes, zoom }) {
+  const map = useMap();
+  const labels = useMemo(() => {
+    if (zoom < 8) return [];
+    const output = [];
+    const spacing = zoom >= 12 ? 230 : zoom >= 10 ? 290 : 370;
+    for (const route of routes) {
+      const projected = route.points.map((point) => map.project([point.latitude, point.longitude], zoom));
+      const segments = [];
+      let total = 0;
+      for (let i = 1; i < projected.length; i++) {
+        const length = projected[i - 1].distanceTo(projected[i]);
+        if (length < 0.1) continue;
+        segments.push({ index: i - 1, start: total, length });
+        total += length;
+      }
+      if (!segments.length || total < 80) continue;
+      // Place labels at intervals, avoiding endpoints and excessive clutter.
+      const count = Math.min(12, Math.max(1, Math.floor(total / spacing)));
+      for (let n = 0; n < count; n++) {
+        const target = total * (n + 0.5) / count;
+        const seg = segments.find((item) => target <= item.start + item.length) || segments[segments.length - 1];
+        const ratio = (target - seg.start) / seg.length;
+        const a = projected[seg.index], b = projected[seg.index + 1];
+        const pixel = L.point(a.x + (b.x - a.x) * ratio, a.y + (b.y - a.y) * ratio);
+        const position = map.unproject(pixel, zoom);
+        let angle = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+        const oneWay = ONE_WAY_SECTIONS[route.id];
+        const sectionEnd = route.points.findIndex((point) => point.id === oneWay?.end);
+        const showArrow = oneWay && sectionEnd > 0 && seg.index < sectionEnd;
+        if (showArrow && oneWay.direction === 'reverse') angle += 180;
+        // Keep the label upright while preserving arrow direction.
+        const flip = angle > 90 || angle < -90;
+        const uprightAngle = flip ? angle + 180 : angle;
+        const arrowSide = showArrow ? (flip ? 'left' : 'right') : null;
+        const label = `<div class="airway-route-label ${route.type === 'rnav' ? 'airway-route-label--rnav' : 'airway-route-label--conventional'}" style="transform:translate(-50%,-50%) rotate(${uprightAngle}deg);font-size:${Math.min(13, 10 + Math.max(0, zoom - 8) * .65)}px"><span>${arrowSide === 'left' ? '◀ ' : ''}${route.id}${arrowSide === 'right' ? ' ▶' : ''}</span></div>`;
+        output.push({ key: `${route.id}-${n}`, position, icon: L.divIcon({ className: 'airway-route-label-container', html: label, iconSize: [0, 0] }) });
+      }
+    }
+    return output;
+  }, [map, routes, zoom]);
+  return <>{labels.map((item) => <Marker key={item.key} position={item.position} icon={item.icon} interactive={false} keyboard={false} zIndexOffset={-1000} />)}</>;
 }
 
 function MoveToAirport({ airport }) {
@@ -143,6 +203,8 @@ function App() {
   const [selectedIcao, setSelectedIcao] = useState(null);
   const validVors = useMemo(() => validNavigationPoints(vors), []);
   const validFixes = useMemo(() => validNavigationPoints(fixes), []);
+  const [selectedAirway, setSelectedAirway] = useState(null);
+  const validAirways = useMemo(() => airways.filter((route) => route.points.length >= 2), []);
   const [showAllFrequencies, setShowAllFrequencies] = useState(false);
   const [frequencyView, setFrequencyView] = useState('group');
   const [expandedServices, setExpandedServices] = useState([]);
@@ -349,7 +411,7 @@ function App() {
         </div>
 
         <div className="topbar-right">
-          <span className="version-label">v1.1.0</span>
+          <span className="version-label">v1.2.0</span>
           <div className="topbar-coordinate">
             36°30′N · 127°30′E
           </div>
@@ -509,7 +571,7 @@ function App() {
 
           <div className="sidebar-footer">
             <span>DATA-DRIVEN AVIATION MAP</span>
-            <span>v1.1.0</span>
+            <span>v1.2.0</span>
           </div>
         </aside>
 
@@ -530,6 +592,7 @@ function App() {
 
             <ZoomControl position="bottomright" />
             <ResponsivePopupZoom onZoomChange={setMapZoom} />
+            <ClearAirwayOnMapClick onClear={() => setSelectedAirway(null)} />
 
             <MoveToAirport airport={selectedAirport} />
 
@@ -569,6 +632,32 @@ function App() {
                   </Popup>
                 </Marker>
               ))}
+            {activeLayers.includes('routes') && validAirways.map((route) => (
+              <Polyline
+                key={`airway-${route.id}`}
+                positions={route.points.map((point) => [point.latitude, point.longitude])}
+                pathOptions={{
+                  color: selectedAirway === route.id ? '#ffcc73' : route.type === 'rnav' ? '#69b9ef' : '#b39af6',
+                  weight: selectedAirway === route.id ? Math.max(2.2, Math.min(4, 2.6 + (mapZoom - 8) * 0.3)) : Math.max(0.85, Math.min(2.4, 1.1 + (mapZoom - 6) * 0.26)),
+                  opacity: selectedAirway === route.id ? 0.95 : 0.62,
+                }}
+                eventHandlers={{ click: () => setSelectedAirway(route.id), popupclose: () => setSelectedAirway(null) }}
+              >
+                <Tooltip sticky direction="top" opacity={0.95}>
+                  {route.id} · {route.type === 'rnav' ? 'RNAV' : 'Conventional'}
+                </Tooltip>
+                <Popup className="aerofreq-airport-popup aerofreq-navigation-popup" maxWidth={190} minWidth={190}>
+                  <div className="airport-popup-card airway-popup-card">
+                    <div className="airport-popup-eyebrow">ATS ROUTE · {route.type === 'rnav' ? 'RNAV' : 'CONVENTIONAL'}</div>
+                    <div className="airport-popup-name">{route.id}</div>
+                    <div className="airport-popup-english">{route.points.length}개 경유 지점 · {route.source}</div>
+                    <div className="airway-point-list">{route.points.map((point) => point.id).join(' → ')}</div>
+                    <div className="airway-popup-notice">표시된 선은 경유 지점 간 연결선입니다. 고도·방향·시간별 제한은 원문 AIP를 확인하세요. 운항용으로 사용할 수 없습니다.</div>
+                  </div>
+                </Popup>
+              </Polyline>
+            ))}
+            {activeLayers.includes('routes') && <AirwayLabels routes={validAirways} zoom={mapZoom} />}
             {activeLayers.includes('navaids') && validVors.map((vor) => (
               <Marker key={`vor-${vor.id}`} position={[Number(vor.latitude), Number(vor.longitude)]} icon={vorIcon}>
                 <Popup className="aerofreq-airport-popup aerofreq-navigation-popup" maxWidth={190} minWidth={190}>

@@ -1361,3 +1361,14 @@ box-shadow:0 -10px 35px #0007}
 }
 
 .nav-marker--fix-compulsory, .nav-marker--fix-on-request { color: #a7e9e3; }
+
+/* ATS routes: lightweight lines and compact information popup */
+.airway-popup-card { width: 190px; box-sizing: border-box; }
+.airway-point-list { margin-top: 10px; padding: 9px; border-radius: 7px; background: #101b27; color: #d8e5f0; font-size: 11px; line-height: 1.6; max-height: 110px; overflow-y: auto; overflow-wrap: anywhere; }
+.airway-popup-notice { margin-top: 9px; font-size: 10px; line-height: 1.5; color: #a7b7c8; }
+
+/* Zoom-responsive IFR route nameplates; no labels at zoom 7 or below. */
+.airway-route-label-container { background: transparent; border: 0; pointer-events: none !important; }
+.airway-route-label { position: absolute; left: 0; top: 0; transform-origin: center center; white-space: nowrap; pointer-events: none; font-family: 'DM Mono', monospace; font-weight: 700; line-height: 1.15; }
+.airway-route-label > span { display: block; color: #f5fbff; border: 1px solid rgba(235,246,255,.75); border-radius: 2px; padding: 3px 5px; background: #213f73; box-shadow: 0 1px 5px #0008; }
+.airway-route-label--conventional > span { background: #28334c; }
